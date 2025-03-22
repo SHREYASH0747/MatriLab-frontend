@@ -1,0 +1,208 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+.content {
+  color: #fff;
+  max-width: 45%;
+}
+.content h4 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 28.432px;
+  line-height: 57.6px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0;
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  text-align: start;
+  text-indent: 0px;
+}
+#content-h4 {
+  color: #dc0000;
+  font-family: "Poppins", sans-serif;
+  font-size: 28.432px;
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  text-align: start;
+  text-indent: 0px;
+}
+.content p {
+  font-size: 3.4375rem;
+  margin-bottom: 30px;
+  font-family: "DM Serif Display", serif;
+  color: #dc0000;
+  line-height: 53.25px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0;
+  font-weight: 500;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: start;
+  text-indent: 0;
+}
+.success-stories-button {
+  background-color: #dc0000;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #eeeeee;
+  line-height: 22.5px;
+  vertical-align: middle;
+  letter-spacing: 0.45px;
+  word-spacing: 0px;
+  font-weight: 500;
+  text-align: center;
+}
+.success-stories-button:hover {
+  background-color: #dc0000;
+}
+
+/* Partner Form Styling */
+.partner-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  max-width: 100%;
+}
+.partner-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #dc0000;
+  text-align: center;
+}
+.partner-form .form-group {
+  margin-bottom: 15px;
+}
+.partner-form label {
+  font-size: 0.9rem;
+  color: #dc0000;
+  display: block;
+  margin-bottom: 5px;
+}
+.partner-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+.partner-form .form-row .w-48 {
+  width: 48%;
+}
+.partner-form .form-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.partner-form .form-input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+.partner-form .search-button {
+  background: linear-gradient(90deg, #dc1200, #dc0000);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+.partner-form .search-button:hover {
+  background: #dc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+  }
+  .content {
+    max-width: 80%;
+    margin: 0 auto 20px;
+  }
+  .partner-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 30px;
+  }
+  .content {
+    max-width: 90%;
+  }
+  .partner-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+  }
+  .content {
+    max-width: 100%;
+  }
+  .partner-form {
+    width: 100%;
+    padding: 20px;
+  }
+  .success-stories-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 15px;
+  }
+  .content h4 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 1.8rem;
+  }
+  .partner-form {
+    padding: 15px;
+  }
+  .success-stories-button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}

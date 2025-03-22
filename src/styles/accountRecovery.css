@@ -1,0 +1,114 @@
+/* General Container */
+.account-recovery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #f7f7f7;
+  }
+  
+  .account-recovery-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid rgba(255, 192, 203, 0.3);
+  }
+  
+  /* Heading and Description */
+  .account-recovery-form h2 {
+    color: #dc0000;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .account-recovery-form p {
+    color: #888;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  /* Error Message Styling */
+.error-message {
+    color: #dc0000;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #dc0000;
+  }
+  
+  /* Recaptcha Section */
+  .recaptcha-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .recaptcha-group input[type="checkbox"] {
+    accent-color: #dc0000;
+    cursor: pointer;
+  }
+  
+  .recaptcha-group label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Button Styles */
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #dc0000, #dc0000);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background: linear-gradient(to right, #dc0000, #dc0000);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .account-recovery-form {
+      padding: 20px;
+    }
+  
+    .btn-submit {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  

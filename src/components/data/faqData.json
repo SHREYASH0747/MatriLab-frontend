@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "question": "What is a Matrimonial site?",
+      "answer": "A Matrimonial site is a platform designed to help individuals find life partners by providing matchmaking services."
+    },
+    {
+      "id": 2,
+      "question": "How does it work?",
+      "answer": "Users create profiles, search for compatible matches, and connect with potential partners through the site."
+    },
+    {
+      "id": 3,
+      "question": "How do I find a partner?",
+      "answer": "You can find a partner by browsing profiles, applying filters based on your preferences, and contacting matches."
+    },
+    {
+      "id": 4,
+      "question": "How do I purchase a package?",
+      "answer": "Packages can be purchased through the pricing page. Choose a plan, make the payment, and enjoy the benefits."
+    },
+    {
+      "id": 5,
+      "question": "What services do you offer?",
+      "answer": "We offer matchmaking, profile creation, personalized suggestions, and communication tools to help you find a partner."
+    },
+    {
+      "id": 6,
+      "question": "What are success stories?",
+      "answer": "Success stories are testimonials from users who found their partners through our platform."
+    },
+    {
+      "id": 7,
+      "question": "What packages are available?",
+      "answer": "We offer various packages tailored to different needs. Check our pricing page for more details."
+    },
+    {
+      "id": 8,
+      "question": "Is there an age restriction?",
+      "answer": "Yes, users must be 18 years or older to use the platform."
+    }
+  ]
+  
