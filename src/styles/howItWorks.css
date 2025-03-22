@@ -13,13 +13,13 @@
 .how-it-works h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .how-it-works p {
   font-size: 18px;
   max-width: 800px;
   margin: 0 auto 30px;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .steps-container {
   display: flex;
@@ -44,9 +44,9 @@
   height: 30px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: #dc0000;
+  background: var(--primary-color);
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--secondary-color);
   position: absolute;
   top: -15px;
   left: 50%;
@@ -58,16 +58,16 @@
 }
 .step-icon {
   font-size: 24px;
-  color: #dc0000;
+  color: var(--primary-color);
   margin-bottom: 20px;
   width: 80px;
   height: 80px;
-  border: 2px dashed #dc0000;
+  border: 2px dashed var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: var(--secondary-color);
   position: relative;
 }
 .step-content {
@@ -77,7 +77,7 @@
 .step-content h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .step-content p {
   font-size: 16px;

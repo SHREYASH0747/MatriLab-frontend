@@ -15,7 +15,7 @@
   .info-card {
     display: flex;
     align-items: center;
-    background: #ffffff;
+    background: var(--secondary-color);
     border: 1px solid #c9c3c36b;
     border-radius: 10px;
     padding: 30px 20px;
@@ -33,7 +33,7 @@
   }
   .icon {
     font-size: 24px;
-    color: #fff;
+    color: var(--secondary-color);
   }
   .info-content-text {
     padding-left: 20px;
@@ -58,7 +58,7 @@
   }
   .form-container {
     width: 47%;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     padding: 50px 30px;
     border-radius: 10px;
   }
@@ -87,7 +87,7 @@
   form textarea:focus {
     border-color: #dc0000;
     outline: none;
-    background: #fff;
+    background: var(--secondary-color);
   }
   form textarea {
     height: 120px;
@@ -103,8 +103,8 @@
   }
   form button {
     width: 100%;
-    background: #dc0000;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
     padding: 12px;
     border-radius: 5px;

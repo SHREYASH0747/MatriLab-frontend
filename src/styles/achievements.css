@@ -1,7 +1,7 @@
 .achievement-section {
-  background-color: #dc0000;
+  background-color: var(--primary-color);
   padding: 10px 5px;
-  color: #fff;
+  color: var(--secondary-color);
   text-align: center;
 }
 .achievement-container {
@@ -21,11 +21,11 @@
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  color: #fff;
+  color: var(--secondary-color);
   height: 80px;
   width: 80px;
   border-radius: 50% 0% 50% 50%;
-  border: 2px dashed #ffffff;
+  border: 2px dashed var(--secondary-color);
 }
 .achievement-number {
   font-size: 32px;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/registrationForm.css";
+import "../styles/styles.css";
 import TalukaDivision from "../components/data/talukaDivisionData";
 // import { submitRegistrationForm } from "../services/MyApiService";
 import MyApiService from "../services/MyApiService";

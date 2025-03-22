@@ -1,3 +1,4 @@
+
 .user-dashboard-container {
   background-color: #f8f9fa;
 }
@@ -9,7 +10,7 @@
 .dashboard-left-section {
   width: 25%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   border: 1px solid #dcdcdc;
   margin-top: 60px;
   border-radius: 5px;
@@ -45,15 +46,15 @@
   position: absolute;
   right: -10px;
   bottom: 5px;
-  background-color: #dc0000;
+  background-color: var(--primary-color);
 }
 .add-image-icon .edit-icon {
   font-size: 12px;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .name-id-button-container {
   width: 100%;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 0 auto;  
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -82,16 +83,16 @@
   text-decoration: none;
   padding: 8px 15px 8px 25px;
   color: #4a4a4a;
-  border-left: 3px solid #ffffff;
+  border-left: 3px solid var(--secondary-color);
 
 }
 .link-active {
   background-color: rgba(220, 0, 0, 0.2);
-  border-left: 3px solid #dc0000;
+  border-left: 3px solid var(--primary-color);
 }
 .dashboard-links:hover {
   background-color: rgba(220, 0, 0, 0.2);
-  border-left: 3px solid #dc0000;
+  border-left: 3px solid var(--primary-color);
 }
 .dashboard-links p {
   margin-bottom: 0px;
@@ -142,7 +143,7 @@
 }
 .rosso-bg-with-border {
   background-color: rgba(220, 0, 0, 0.2);
-  border-left: 3px solid #dc0000;
+  border-left: 3px solid var(--primary-color);
 }
 .goldenrod-bg-with-border{
   background-color: rgb(255,205,0, 0.2);
@@ -164,10 +165,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .rosso-bg {
-  background-color: #dc0000;
+  background-color: var(--primary-color);
 }
 .goldenrod-bg{
   background-color: #ffcd00;
@@ -193,7 +194,7 @@
 
 .custom-table th {
   background-color: #ff007f;
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: bold;
   padding: 12px;
   text-align: left;
@@ -231,7 +232,7 @@
 .pending {
   color: #ff9500;
   border: 1px solid #ff9500;
-  background-color: #fff8e1;
+  background-color: var(--secondary-color)8e1;
 }
 
 .accepted {
@@ -280,7 +281,7 @@
 }
 
 .pacakage-detail-container {
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   width: 100%;
   border-radius: 5px;
   border: 1px solid #dcdcdc;
@@ -312,7 +313,7 @@
   color: #999999;
 }
 .pacakage-detail-content-wrapper .pacakage-detail-content i {
-  color: #dc0000;
+  color: var(--primary-color);
 }
 .pkg {
   margin-top: 16px;
@@ -327,9 +328,9 @@
   justify-content: center;
   border-radius: 5px;
   align-items: center;
-  color: #ffffff;
+  color: var(--secondary-color);
   text-decoration: none;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 /* .......................................shortlisted profile css............................... */
@@ -338,7 +339,7 @@
   align-items: center;
 }
 .education-information-dialog{
-  background: #fff;
+  background: var(--secondary-color);
   border-radius: 8px;
   width: 70%;
   display: flex;

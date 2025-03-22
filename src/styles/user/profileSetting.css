@@ -1,6 +1,6 @@
 .section-header {
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   border: 1px solid #dcdcdc;
   padding: 10px 15px;
   display: flex;
@@ -10,7 +10,7 @@
   margin-bottom: 15px;
 }
 .basic-information-form {
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   padding: 20px;
 }
 .section {
@@ -45,7 +45,7 @@
   align-items: center;
   align-self: flex-end;
   background-color: #dc0000;
-  color: #ffffff;
+  color: var(--secondary-color);
   padding: 8px 20px;
   float: right;
   border-radius: 6px;;

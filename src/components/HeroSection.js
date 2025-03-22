@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/styles.css";
 import "../styles/heroSection.css";
 import Slider1 from "../assets/Slider1.jpg";
-import Slider3 from "../assets/Slider3.jpg";
+import Slider3 from "../assets/Slider2.jpg";
 import Slider4 from "../assets/Slider4.jpg";
 import Slider5 from "../assets/Slider5.jpg";
 
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="content">
           <h4>
             <span id="content-h4">Welcome</span> To{" "}
-            <span style={{ color: "#ffcd00" }}>Mangala Muhurtham</span>
+            <span id="mang">Mangala Muhurtham</span>
           </h4>
 
           <p>Find Your Perfect Life Partner With Us</p>

@@ -1,4 +1,4 @@
-.hero-section {
+/* .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,14 +8,42 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: background-image 1s ease-in-out;
+} */
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2) ); /* Adjust gradient colors */
+  opacity: 0.8; /* Adjust transparency */
+  z-index: 1; /* Keeps overlay above the background but below the content */
 }
 .content {
-  color: #fff;
+  position: relative;
+  z-index: 2; /* Keeps content above both blur and overlay */
+  color: var(--secondary-color);
   max-width: 45%;
 }
 .content h4 {
   margin-bottom: 20px;
-  color: #ffffff;
+  color: var(--secondary-color)fff;
   font-family: "Poppins", sans-serif;
   font-size: 28.432px;
   line-height: 57.6px;
@@ -31,7 +59,7 @@
   text-indent: 0px;
 }
 #content-h4 {
-  color: #dc0000;
+  color: var(--primary-color);
   font-family: "Poppins", sans-serif;
   font-size: 28.432px;
   font-weight: 600;
@@ -46,7 +74,7 @@
   font-size: 3.4375rem;
   margin-bottom: 30px;
   font-family: "DM Serif Display", serif;
-  color: #dc0000;
+  color: var(--primary-color);
   line-height: 53.25px;
   vertical-align: baseline;
   letter-spacing: normal;
@@ -60,7 +88,7 @@
   text-indent: 0;
 }
 .success-stories-button {
-  background-color: #dc0000;
+  background-color: var(--primary-color);
   border: none;
   padding: 10px 20px;
   color: white;
@@ -79,11 +107,13 @@
   text-align: center;
 }
 .success-stories-button:hover {
-  background-color: #dc0000;
+  background-color: var(--primary-color);
 }
 
 /* Partner Form Styling */
 .partner-form {
+  position: relative;
+  z-index: 2; /* Keeps content above both blur and overlay */
   background: rgba(255, 255, 255, 0.95);
   padding: 30px 40px;
   border-radius: 10px;
@@ -94,7 +124,7 @@
 .partner-form h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #dc0000;
+  color: var(--primary-color);
   text-align: center;
 }
 .partner-form .form-group {
@@ -102,7 +132,7 @@
 }
 .partner-form label {
   font-size: 0.9rem;
-  color: #dc0000;
+  color: var(--primary-color);
   display: block;
   margin-bottom: 5px;
 }
@@ -130,8 +160,8 @@
   background: #f9f9f9;
 }
 .partner-form .search-button {
-  background: linear-gradient(90deg, #dc1200, #dc0000);
-  color: #fff;
+  background: linear-gradient(90deg, #dc1200, var(--primary-color));
+  color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -140,7 +170,7 @@
   width: 100%;
 }
 .partner-form .search-button:hover {
-  background: #dc0000;
+  background: var(--primary-color);
 }
 
 /* Responsive Design */

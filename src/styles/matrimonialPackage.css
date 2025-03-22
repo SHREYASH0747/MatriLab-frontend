@@ -43,7 +43,7 @@
 .plan__head-content h4 {
   font-size: 25px;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .plan__head-content::before {
   position: absolute;
@@ -58,7 +58,7 @@
 }
 .plan__body {
   padding: 35px 25px 35px;
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
 }
 .plan__body-price {
   color: #dc0000;
@@ -100,7 +100,7 @@
   overflow: hidden;
   position: relative;
   background: linear-gradient(50deg, #dc3300, #dc4400);
-  color: #ffffff;
+  color: var(--secondary-color);
   letter-spacing: 0.03em;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -108,7 +108,7 @@
   font-size: 15px;
   padding: 8px 16px;
   border-radius: 5px;
-  color: #ffffff;
+  color: var(--secondary-color);
   width: 100px;
   border: none;
   outline: none;
@@ -147,7 +147,7 @@
 }
 .buy-now-btn {
   background-color: #dc0000;
-  color: #fff;
+  color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -162,7 +162,7 @@
   margin-top: 40px;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: var(--secondary-color);
   letter-spacing: 0.03em;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -185,7 +185,7 @@
   z-index: 9999;
 }
 .confirmation-dialog {
-  background: #fff;
+  background: var(--secondary-color);
   border-radius: 8px;
   width: 500px;
   display: flex;
@@ -210,7 +210,7 @@
 }
 .cross-icon {
   font-size: 25px;
-  color: #ffffff;
+  color: var(--secondary-color);
   background-color: #dc0000;
   padding: 0;
   margin: 0;
@@ -240,11 +240,11 @@
 }
 .alert-cancel {
   background: #333;
-  color: #fff;
+  color: var(--secondary-color);
 }
 .alert-confirm {
   background: #dc0000;
-  color: #fff;
+  color: var(--secondary-color);
   margin-left: 10px;
 }
 

@@ -3,14 +3,14 @@
     max-width: 45%;
     margin: 50px auto;
     padding: 30px;
-    background: #fff;
+    background: var(--secondary-color);
     border-radius: 8px;
     box-shadow: 1px 1px 4px 4px rgba(207, 192, 192, 0.4);
     border: 1px solid #dd9a9a;
     text-align: center;
   }
   .login-form h2 {
-    color: #dc0000;
+    color: var(--primary-color);
     font-size: 35px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -35,7 +35,7 @@
   }
   .form-group input:focus {
     outline: none;
-    border-color: #dc0000;
+    border-color: var(--primary-color);
   }
   .remember-me-with-forgot-pwd {
     display: flex;
@@ -66,12 +66,12 @@
     margin: 0;
   }
   input[type="checkbox"] {
-    accent-color: #dc0000;
+    accent-color: var(--primary-color);
     cursor: pointer;
   }
   .forgot-password {
     font-size: 14px;
-    color: #dc0000;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -85,7 +85,7 @@
     gap: 8px;
   }
   .g-recaptcha input[type="checkbox"] {
-    accent-color: #dc0000;
+    accent-color: var(--primary-color);
     cursor: pointer;
   }
   .g-recaptcha {
@@ -95,8 +95,8 @@
   .btn-login {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #dc0000, #dc0000);
-    color: #fff;
+    background: linear-gradient(to right, var(--primary-color), var(--primary-color));
+    color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -105,14 +105,14 @@
     transition: background 0.3s;
   }
   .btn-login:hover {
-    background: linear-gradient(to right, #dc0000, #dc0000);
+    background: linear-gradient(to right, var(--primary-color), var(--primary-color));
   }
   .signup {
     margin-top: 15px;
     font-size: 14px;
   }
   .signup a {
-    color: #dc0000;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
   }
@@ -140,7 +140,7 @@
     font-size: 16px;
   }
   .social-login-icons {
-    color: #dc0000;
+    color: var(--primary-color);
     font-size: 30px;
   }
   .google {

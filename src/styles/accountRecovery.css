@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 500px;
     padding: 30px;
-    background: #fff;
+    background: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -87,7 +87,7 @@
     width: 100%;
     padding: 12px;
     background: linear-gradient(to right, #dc0000, #dc0000);
-    color: #fff;
+    color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     font-size: 16px;
