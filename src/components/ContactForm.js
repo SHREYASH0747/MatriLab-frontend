@@ -256,7 +256,7 @@ const ContactForm = () => {
             </div>
             <div className="info-content-text">
               <h3>Office Address</h3>
-              <p>4517 Washington Ave. Kentucky</p>
+              <p>Indore, India</p>
             </div>
           </div>
           <div className="info-card">
@@ -268,10 +268,10 @@ const ContactForm = () => {
               {/* Added mailto functionality */}
               <p>
                 <a
-                  href="mailto:mangalamuhurtham2020@gmail.com"
+                  href="mailto:rishtaconnect2025@gmail.com"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  mangalamuhurtham2020@gmail.com
+                  rishtaconnect2025@gmail.com
                 </a>
               </p>
             </div>
@@ -287,8 +287,7 @@ const ContactForm = () => {
                 style={{ cursor: "pointer", color: "inherit" }}
                 onClick={handlePhoneClick}
               >
-                +917339645053
-              </p>
+                +91 123456789</p>
             </div>
           </div>
         </div>

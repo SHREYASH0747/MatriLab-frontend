@@ -18,11 +18,11 @@ const Navbar = () => {
           <div className="contact-info">
             <div className="info-item">
               <i className="bi bi-envelope"></i>
-              <span>test@gmail.com</span>
+              <span>rishtaconnect2025@gmail.com</span>
             </div>
             <div className="info-item">
               <i className="bi bi-telephone"></i>
-              <span>+91010101010</span>
+              <span>+91 123456789</span>
             </div>
           </div>
           <div className="social-icons">
