@@ -1,7 +1,7 @@
 .section-header {
   width: 100%;
   background-color: var(--secondary-color);
-  border: 1px solid #dcdcdc;
+  border: 1px solid var(--border-color);
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -54,4 +54,16 @@
   margin-bottom: 15px;
   font-size: 16px;
   font-weight: bold;
+}
+
+.submit-btn {
+  width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, var(--primary-color), var(--ascent-color));
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }

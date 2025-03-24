@@ -91,7 +91,7 @@
   background-color: var(--primary-color);
   border: none;
   padding: 10px 20px;
-  color: white;
+  color: var(--secondary-color);
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
@@ -114,7 +114,7 @@
 .partner-form {
   position: relative;
   z-index: 2; /* Keeps content above both blur and overlay */
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--secondary-color);
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -160,7 +160,7 @@
   background: var(--secondary-color);
 }
 .partner-form .search-button {
-  background: linear-gradient(90deg, #dc1200, var(--primary-color));
+  background: linear-gradient(90deg, var(--ascent-color), var(--primary-color));
   color: var(--secondary-color);
   border: none;
   padding: 10px 20px;

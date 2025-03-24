@@ -1,5 +1,5 @@
 .user-dashboard-container {
-  background-color: #f8f9fa;
+  background-color: var(--secondary-color);
 }
 .user-dashboard-wrapper {
   display: flex;
@@ -10,7 +10,7 @@
   width: 25%;
   height: 100%;
   background-color: var(--secondary-color);
-  border: 1px solid #dcdcdc;
+  border: 1px solid var(--border-color);
   margin-top: 60px;
   border-radius: 5px;
 }
@@ -60,7 +60,7 @@
   align-items: center;
 }
 .name-id-button-container h5 {
-  color: #000000;
+  color: var(--text-color);
 }
 .name-id-button-container h6 {
   color: #999999;
@@ -68,7 +68,7 @@
 .public-profile-button {
   width: 90%;
   background-color: rgba(220, 0, 0, 0.2);
-  color: #000000;
+  color: var(--text-color);
   text-decoration: none;
   border-radius: 5px;
   padding: 8px 16px;
@@ -192,7 +192,7 @@
 }
 
 .custom-table th {
-  background-color: #ff007f;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   font-weight: bold;
   padding: 12px;
@@ -201,7 +201,7 @@
 
 .custom-table td {
   padding: 12px;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .name-cell {
@@ -211,7 +211,7 @@
 }
 
 .avatar {
-  background-color: #eee;
+  background-color: var(--secondary-color);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -237,7 +237,7 @@
 .accepted {
   color: #28a745;
   border: 1px solid #28a745;
-  background-color: #e6ffe6;
+  background-color: var(--secondary-color);
 }
 
 .action-button {
@@ -250,7 +250,7 @@
 
 .action-button.pink {
   background-color: #ffd1dc;
-  color: #ff007f;
+  color: var(--primary-color);
 }
 
 .action-button.pink:hover {
@@ -259,7 +259,7 @@
 
 .action-button.blue {
   background-color: #e6f2ff;
-  color: #007bff;
+  color: var(--blue-color);
 }
 
 .action-button.blue:hover {
@@ -287,7 +287,7 @@
 }
 .current-pkg-container {
   padding: 16px 24px;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid var(--border-color);
 }
 .current-pkg-container h5 {
   margin-bottom: 0px;

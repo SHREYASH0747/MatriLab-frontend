@@ -2,7 +2,7 @@
     font-family: Arial, sans-serif;
     width: 100%;
     color: #333;
-    background-color: #f8f9fa;
+    background-color: var(--secondary-color);
   }
   .contact-top-container {
     padding: 60px 0px;
@@ -16,14 +16,14 @@
     display: flex;
     align-items: center;
     background: var(--secondary-color);
-    border: 1px solid #c9c3c36b;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 30px 20px;
     width: 32%;
     height: 100%;
   }
   .pink {
-    background: #dc0000;
+    background: var(--primary-color);
     height: 50px;
     width: 50px;
     border-radius: 4px;
@@ -64,7 +64,7 @@
   }
   .form-container h3 {
     font-family: poppins, sans-serif;
-    color: #dc0000;
+    color: var(--primary-color);
     margin-bottom: 50px;
     text-align: center;
     font-size: 28px;
@@ -77,15 +77,15 @@
     width: 100%;
     margin-bottom: 15px;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     font-size: 14px;
-    background: #f9f9f9;
+    background: var(--secondary-color);
     transition: border-color 0.3s ease;
   }
   form input:focus,
   form textarea:focus {
-    border-color: #dc0000;
+    border-color: var(--primary-color);
     outline: none;
     background: var(--secondary-color);
   }
@@ -113,7 +113,7 @@
     transition: background 0.3s ease;
   }
   form button:hover {
-    background: #e6006c;
+    background: var(--ascent-color);
   }
   form button:disabled {
     background: #ccc;

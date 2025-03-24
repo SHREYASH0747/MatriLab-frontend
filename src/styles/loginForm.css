@@ -55,7 +55,7 @@
   input .remember-me-checkbox {
     width: 15px ¡important;
     height: 15px ¡important;
-    border-color: red;
+    border-color: var(--danger-color);
   }
   .remember-me-with-forgot-pwd p {
     margin: 0px 0px 0px 15px;
@@ -76,7 +76,7 @@
     transition: color 0.3s;
   }
   .forgot-password:hover {
-    color: #e91e63;
+    color: var(--ascent-color);
   }
   .recaptcha {
     display: flex;

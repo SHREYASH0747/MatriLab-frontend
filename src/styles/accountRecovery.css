@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background: #f7f7f7;
+    background: var(--secondary-color);
   }
   
   .account-recovery-form {
@@ -20,7 +20,7 @@
   
   /* Heading and Description */
   .account-recovery-form h2 {
-    color: #dc0000;
+    color: var(--primary-color);
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -28,7 +28,7 @@
   }
   
   .account-recovery-form p {
-    color: #888;
+    color: var(--border-color);
     font-size: 15px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -37,7 +37,7 @@
 
   /* Error Message Styling */
 .error-message {
-    color: #dc0000;
+    color: var(--danger-color);
     font-size: 14px;
     margin-top: 10px;
     text-align: left;
@@ -53,14 +53,14 @@
   .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     font-size: 14px;
   }
   
   .form-group input:focus {
     outline: none;
-    border-color: #dc0000;
+    border-color: var(--danger-color);
   }
   
   /* Recaptcha Section */
@@ -73,7 +73,7 @@
   }
   
   .recaptcha-group input[type="checkbox"] {
-    accent-color: #dc0000;
+    accent-color: var(--danger-color);
     cursor: pointer;
   }
   
@@ -98,6 +98,7 @@
   
   .btn-submit:hover {
     background: linear-gradient(to right, var(--ascent-color), var(--primary-color));
+    color: var(--secondary-color);
   }
   
   /* Responsive Design */

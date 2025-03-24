@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 .plan__head {
-  background: linear-gradient(50deg, #dc0050, #dc1000);
+  background: linear-gradient(50deg, var(--primary-color), var(--ascent-color));
   border-radius: 0px;
 }
 .plan__head-content {
@@ -53,7 +53,7 @@
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   bottom: 0;
-  background: linear-gradient(50deg, #dc2210, #dc4500);
+  background: linear-gradient(50deg, var(--ascent-color), var(--primary-color));
   bottom: -7px;
 }
 .plan__body {
@@ -61,7 +61,7 @@
   background-color: var(--secondary-color);
 }
 .plan__body-price {
-  color: #dc0000;
+  color: var(--danger-color);
   display: inline-block;
   margin: 0 auto;
   font-size: 30px;
@@ -81,7 +81,7 @@
 .plan__body .list--base li {
   margin-bottom: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #c9c3c36b;
+  border-bottom: 1px solid var(--border-color);
 }
 .list--base li {
   position: relative;
@@ -94,12 +94,12 @@
   width: 15px;
 }
 .text--base {
-  color: #dc0000;
+  color: var(--primary-color);
 }
 .buy-now-card-btn {
   overflow: hidden;
   position: relative;
-  background: linear-gradient(50deg, #dc3300, #dc4400);
+  background: linear-gradient(50deg, var(--primary-color), var(--ascent-color));
   color: var(--secondary-color);
   letter-spacing: 0.03em;
   font-family: "Open Sans", sans-serif;
@@ -114,8 +114,8 @@
   outline: none;
 }
 .package-card {
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -146,7 +146,7 @@
   margin-right: 10px;
 }
 .buy-now-btn {
-  background-color: #dc0000;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
@@ -199,7 +199,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid var(--border-color);
   padding: 13px 15px;
 }
 .cross-button {
@@ -211,7 +211,7 @@
 .cross-icon {
   font-size: 25px;
   color: var(--secondary-color);
-  background-color: #dc0000;
+  background-color: var(--danger-color);
   padding: 0;
   margin: 0;
   border-radius: 4px;
@@ -228,7 +228,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid var(--border-color);
   padding: 16px;
 }
 .alert-button {
@@ -243,7 +243,7 @@
   color: var(--secondary-color);
 }
 .alert-confirm {
-  background: #dc0000;
+  background: var(--danger-color);
   color: var(--secondary-color);
   margin-left: 10px;
 }
