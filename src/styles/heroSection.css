@@ -98,7 +98,7 @@
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  color: #eeeeee;
+  color: var(--secondary-color);
   line-height: 22.5px;
   vertical-align: middle;
   letter-spacing: 0.45px;
@@ -139,9 +139,9 @@
 .partner-form .form-control {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  background: #f9f9f9;
+  background: var(--secondary-color);
 }
 .partner-form .form-row .w-48 {
   width: 48%;
@@ -155,9 +155,9 @@
 .partner-form .form-input {
   width: 50%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  background: #f9f9f9;
+  background: var(--secondary-color);
 }
 .partner-form .search-button {
   background: linear-gradient(90deg, #dc1200, var(--primary-color));

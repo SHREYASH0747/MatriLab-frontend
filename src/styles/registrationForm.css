@@ -2,15 +2,15 @@
     max-width: 1320px;
     margin: auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 8px;
   }
   .registration-form {
     font-family: Arial, sans-serif;
   }
   .registration-form h2 {
-    background-color: #eee;
+    background-color: var(--secondary-color);
     padding: 10px;
     margin-top: 20px;
     border-left: 4px solid var(--primary-color);
@@ -29,6 +29,7 @@
     margin-bottom: 15px;
   }
   .form-group label {
+    color: var(--primary-color);
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
@@ -36,20 +37,20 @@
   .form-group input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
   }
   .form-group .property-select {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     background-color: var(--secondary-color);
   }
   .form-group .color-select {
     width: 100%;
     padding: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     background-color: var(--secondary-color);
   }
@@ -75,7 +76,7 @@
   .searchBox {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     order: -1;
   }
@@ -94,7 +95,7 @@
   }
   .chip {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: var(--blue-color);
     color: var(--secondary-color);
     border-radius: 20px;
     font-size: 14px;
@@ -133,7 +134,7 @@
     justify-content: center;
   }
   .form-actions .btn-submit {
-    background-color: #007bff;
+    background-color: var(--blue-color);
     color: var(--secondary-color);
     padding: 10px 20px;
     border: none;
@@ -142,7 +143,7 @@
     width: 200px;
   }
   .btn-submit:hover {
-    background-color: #0056b3;
+    background-color: var(--blue-color);
   }
   .form-actions .btn-cancel {
     background-color: #ff4d4d;
@@ -155,7 +156,7 @@
     margin-left: 20px;
   }
   .btn-cancel:hover {
-    background-color: #cc0000;
+    background-color: var(--primary-color);
   }
   
   /* Responsive Design */

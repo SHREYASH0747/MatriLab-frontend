@@ -23,7 +23,7 @@
 }
 
 .section-title.open {
-  color: #dc0000;
+  color: var(--primary-color);
   font-size: 17px;
   font-weight: 600;
   font-family: Poppins, sans-serif;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   align-self: flex-end;
-  background-color: #dc0000;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 8px 20px;
   float: right;

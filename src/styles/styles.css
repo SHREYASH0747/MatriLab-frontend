@@ -9,6 +9,9 @@ body {
 :root {
   --primary-color: #F8238C;
   --secondary-color: #fff;
+  --ascent-color: #EE0EB8;
+  --border-color: #ccc;
+  --blue-color: #007bff;
 }
 
 
