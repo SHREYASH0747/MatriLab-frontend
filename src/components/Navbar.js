@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/styles.css";
 import Logo from "../assets/mangala.PNG";
+import icon from "../assets/Matrilab.png"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,11 +18,11 @@ const Navbar = () => {
           <div className="contact-info">
             <div className="info-item">
               <i className="bi bi-envelope"></i>
-              <span>mangalamuhurtham2020@gmail.com</span>
+              <span>test@gmail.com</span>
             </div>
             <div className="info-item">
               <i className="bi bi-telephone"></i>
-              <span>+917339645053</span>
+              <span>+91010101010</span>
             </div>
           </div>
           <div className="social-icons">
@@ -38,7 +39,7 @@ const Navbar = () => {
         <div className="container-max-width navbar-container">
           <div className="logo-section">
             <Link to="/matrilab/">
-              <img src={Logo} alt="Logo" className="logo" />
+              <img src={icon} alt="Logo" className="logo" />
             </Link>
           </div>
           <button className="menu-toggle" onClick={toggleMenu}>

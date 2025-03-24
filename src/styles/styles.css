@@ -107,8 +107,8 @@ p {
 }
 
 .logo {
-  height: auto;
-  width: 180px; /* Adjusted for better scaling */
+  height: 75px;
+  width: 150px; /* Adjusted for better scaling */
 }
 
 .nav-links {

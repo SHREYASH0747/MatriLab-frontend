@@ -109,14 +109,16 @@
   color: #4a4a4a;
 }
 /* ..............................Right Section Start............................................... */
+
 .dashboard-right-section {
   width: 73%;
-  height: 100%;
-  max-height: calc(100vh - 140px);
+  height: 100vh;
+  /* max-height: calc(100vh - 140px); */
   overflow-y: auto;
   scroll-behavior: smooth;
   padding-top: 60px;
 }
+
 .dashboard-right-section h5 {
   color: #444444;
   font-weight: 600;
