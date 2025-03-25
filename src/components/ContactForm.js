@@ -167,7 +167,6 @@
 // export default ContactForm;
 
 
-
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import "../styles/styles.css";
@@ -184,8 +183,8 @@ const ContactForm = () => {
   });
 
   const [captchaVerified, setCaptchaVerified] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false); // Manage form submission state
-  const [errorMessage, setErrorMessage] = useState(""); // For handling any error message
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   // Handle input changes
   const handleChange = (e) => {
@@ -197,47 +196,35 @@ const ContactForm = () => {
   };
 
   // Handle form submission
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   if (!captchaVerified) {
-  //     alert("Please verify the CAPTCHA!");
-  //     return;
-  //   }
+    if (!captchaVerified) {
+      setErrorMessage("Please verify the CAPTCHA!");
+      return;
+    }
 
-  //   // Set the form submitting state to true
-  //   setIsSubmitting(true);
-  //   setErrorMessage(""); // Clear any previous error messages
+    setIsSubmitting(true);
+    setErrorMessage("");
 
-  //   try {
-  //     // Submit the form using ApiService
-  //     await ApiService.submitContactForm(formData);
-  //     alert("Your message has been sent successfully!");
-
-  //     // Reset the form data
-  //     setFormData({
-  //       name: "",
-  //       email: "",
-  //       subject: "",
-  //       message: "",
-  //     });
-  //     setCaptchaVerified(false); // Reset CAPTCHA state
-  //   } catch (error) {
-  //     setErrorMessage("There was an error sending your message. Please try again.");
-  //     console.error("Error submitting form:", error);
-  //   } finally {
-  //     // Reset the submitting state
-  //     setIsSubmitting(false);
-  //   }
-  // };
+    try {
+      // Uncomment when using API
+      // await ApiService.submitContactForm(formData);
+      alert("Your message has been sent successfully!");
+      
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setCaptchaVerified(false);
+    } catch (error) {
+      setErrorMessage("There was an error sending your message. Please try again.");
+      console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   // Handle reCAPTCHA verification
   const handleCaptcha = (value) => {
-    if (value) {
-      setCaptchaVerified(true);
-    } else {
-      setCaptchaVerified(false);
-    }
+    setCaptchaVerified(!!value);
   };
 
   // Handle phone click to show alert
@@ -265,12 +252,8 @@ const ContactForm = () => {
             </div>
             <div className="info-content-text">
               <h3>Email Address</h3>
-              {/* Added mailto functionality */}
               <p>
-                <a
-                  href="mailto:rishtaconnect2025@gmail.com"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
+                <a href="mailto:rishtaconnect2025@gmail.com" style={{ textDecoration: "none", color: "inherit" }}>
                   rishtaconnect2025@gmail.com
                 </a>
               </p>
@@ -282,12 +265,9 @@ const ContactForm = () => {
             </div>
             <div className="info-content-text">
               <h3>Contact Number</h3>
-
-              <p
-                style={{ cursor: "pointer", color: "inherit" }}
-                onClick={handlePhoneClick}
-              >
-                +91 123456789</p>
+              <p style={{ cursor: "pointer", color: "inherit" }} onClick={handlePhoneClick}>
+                +91 123456789
+              </p>
             </div>
           </div>
         </div>
@@ -296,49 +276,16 @@ const ContactForm = () => {
         <div className="contact-form-section">
           <div className="form-container">
             <h3>Get In Touch With Us</h3>
-            {/* Show error message if any */}
             {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
-            <form >
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Name *"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email Address *"
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                placeholder="Subject *"
-                required
-              />
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Message *"
-                required
-              ></textarea>
+            <form onSubmit={handleSubmit}>
+              <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name *" required />
+              <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email Address *" required />
+              <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject *" required />
+              <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message *" required></textarea>
               <div className="recaptcha">
-                <ReCAPTCHA
-                  sitekey={"6LcDC5IqAAAAAEPMK9ko-cBr1-NIuhQhsSE7Mufc"}
-                  onChange={handleCaptcha}
-                />
+                <ReCAPTCHA sitekey="6LcDC5IqAAAAAEPMK9ko-cBr1-NIuhQhsSE7Mufc" onChange={handleCaptcha} />
               </div>
-              <button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
-              </button>
+              <button type="submit" disabled={isSubmitting}>{isSubmitting ? "Sending..." : "Send Message"}</button>
             </form>
           </div>
           <div className="contact-image">
@@ -351,3 +298,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

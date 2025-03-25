@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/styles.css";
-import Logo from "../assets/mangala.PNG";
+// import Logo from "../assets/mangala.PNG";
 import icon from "../assets/Matrilab.png"
 
 const Navbar = () => {
