@@ -29,7 +29,7 @@ const HeroSection = () => {
         <div className="content">
           <h4>
             <span id="content-h4">Welcome</span> To{" "}
-            <span id="mang">Mangala Muhurtham</span>
+            <span id="mang">Rishta Connect</span>
           </h4>
 
           <p>Find Your Perfect Life Partner With Us</p>
