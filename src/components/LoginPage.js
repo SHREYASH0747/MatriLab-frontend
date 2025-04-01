@@ -45,7 +45,7 @@ function LoginPage() {
         // Delay navigation to allow toast to display
         setTimeout(() => {
           // Navigate to the dashboard after the toast message is displayed
-          navigate("/matrilab/user/dashboard", { replace: true });
+          navigate("/user/dashboard", { replace: true });
         }, 2000); // Adjust the delay time as needed (2 seconds in this example)
       } else {
         toast.error("Invalid credentials. Please try again."); // Show error toast for invalid credentials
@@ -111,7 +111,7 @@ function LoginPage() {
                 </div>
                 <p>Remember me</p>
               </div>
-              <Link to="/matrilab/reset" className="forgot-password">
+              <Link to="/reset" className="forgot-password">
                 Forgot your password?
               </Link>
             </div>
@@ -126,7 +126,7 @@ function LoginPage() {
 
         <div className="signup">
           Haven't any account?{" "}
-          <Link to="/matrilab/register" className="signup-link">
+          <Link to="/register" className="signup-link">
             Sign Up
           </Link>
         </div>

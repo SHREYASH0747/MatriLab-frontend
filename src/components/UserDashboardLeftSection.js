@@ -16,7 +16,7 @@ function UserDashboardLeftSection() {
       setUserData(JSON.parse(storedUserData));
     } else {
       // Redirect to login if no user data is found
-      navigate("/matrilab/login");
+      navigate("/login");
     }
   }, [navigate]);
 
@@ -37,16 +37,16 @@ function UserDashboardLeftSection() {
               {userData?.user?.firstName} {userData?.user?.lastName}
             </h5>
             <h6>ID: {userData?.user?.id}</h6>
-            <Link to="/matrilab/user-profile" className="public-profile-button">
+            <Link to="/user-profile" className="public-profile-button">
               Public profile
             </Link>
           </div>
         </div>
         <div>
           <Link
-            to="/matrilab/user/dashboard"
+            to="/user/dashboard"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/dashboard" ? "link-active" : ""
+              location.pathname === "/user/dashboard" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -55,9 +55,9 @@ function UserDashboardLeftSection() {
             <p>DashBoard</p>
           </Link>
           <Link
-            to="/matrilab/user/purchase/history"
+            to="/user/purchase/history"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/purchase/history" ? "link-active" : ""
+              location.pathname === "/user/purchase/history" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -66,9 +66,9 @@ function UserDashboardLeftSection() {
             <p>Purchase History</p>
           </Link>
           <Link
-            to="/matrilab/user/gallery"
+            to="/user/gallery"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/gallery" ? "link-active" : ""
+              location.pathname === "/user/gallery" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -77,9 +77,9 @@ function UserDashboardLeftSection() {
             <p>Gallery</p>
           </Link>
           <Link
-            to="/matrilab/user/shortlist"
+            to="/user/shortlist"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/shortlist" ? "link-active" : ""
+              location.pathname === "/user/shortlist" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -88,9 +88,9 @@ function UserDashboardLeftSection() {
             <p>Shortlist</p>
           </Link>
           <Link
-            to="/matrilab/user/my-interest"
+            to="/user/my-interest"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/my-interest" ? "link-active" : ""
+              location.pathname === "/user/my-interest" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -99,9 +99,9 @@ function UserDashboardLeftSection() {
             <p>My Interest</p>
           </Link>
           <Link
-            to="/matrilab/user/interest-request"
+            to="/user/interest-request"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/interest-request" ? "link-active" : ""
+              location.pathname === "/user/interest-request" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -110,9 +110,9 @@ function UserDashboardLeftSection() {
             <p>Interest Request</p>
           </Link>
           <Link
-            to="/matrilab/user/ignored-lists"
+            to="/user/ignored-lists"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/ignored-lists" ? "link-active" : ""
+              location.pathname === "/user/ignored-lists" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -121,9 +121,9 @@ function UserDashboardLeftSection() {
             <p>Ignored Lists</p>
           </Link>
           <Link
-            to="/matrilab/user/messages"
+            to="/user/messages"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/messages" ? "link-active" : ""
+              location.pathname === "/user/messages" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -132,9 +132,9 @@ function UserDashboardLeftSection() {
             <p>Message</p>
           </Link>
           <Link
-            to="/matrilab/user/support-tickets"
+            to="/user/support-tickets"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/support-tickets" ? "link-active" : ""
+              location.pathname === "/user/support-tickets" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -143,9 +143,9 @@ function UserDashboardLeftSection() {
             <p>Support Tickets</p>
           </Link>
           <Link
-            to="/matrilab/user/profile-settings"
+            to="/user/profile-settings"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/profile-settings" ? "link-active" : ""
+              location.pathname === "/user/profile-settings" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -154,9 +154,9 @@ function UserDashboardLeftSection() {
             <p>Profile Setting</p>
           </Link>
           <Link
-            to="/matrilab/user/change-password"
+            to="/user/change-password"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/user/change-password" ? "link-active" : ""
+              location.pathname === "/user/change-password" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">
@@ -165,9 +165,9 @@ function UserDashboardLeftSection() {
             <p>Change Password</p>
           </Link>
           <Link
-            to="/matrilab/login"
+            to="/login"
             className={`dashboard-links ${
-              location.pathname === "/matrilab/login" ? "link-active" : ""
+              location.pathname === "/login" ? "link-active" : ""
             }`}
           >
             <div className="dashboard-links-icon-container">

@@ -1,11 +1,36 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/styles.css";
 // import Logo from "../assets/mangala.PNG";
 import icon from "../assets/Matrilab.png"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Initially false
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Check login status when component mounts
+    const userData = localStorage.getItem("userData");
+    setIsLoggedIn(!!userData); // Convert to boolean
+
+    // Event listener to detect changes in localStorage
+    const handleStorageChange = () => {
+      setIsLoggedIn(!!localStorage.getItem("userData"));
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("userData");
+    setIsLoggedIn(false);
+    navigate("/rishtaConnect");
+  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -38,7 +63,7 @@ const Navbar = () => {
       <div className="main-navbar">
         <div className="container-max-width navbar-container">
           <div className="logo-section">
-            <Link to="/matrilab/">
+            <Link to="/">
               <img src={icon} alt="Logo" className="logo" />
             </Link>
           </div>
@@ -47,35 +72,35 @@ const Navbar = () => {
           </button>
           <nav className={`nav-links ${menuOpen ? "show" : ""}`}>
             <Link
-              to="/matrilab"
+              to="/"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
               Home
             </Link>
             <Link
-              to="/matrilab/packages"
+              to="/packages"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
               Packages
             </Link>
             <Link
-              to="/matrilab/members"
+              to="/members"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
               Members
             </Link>
             <Link
-              to="/matrilab/stories"
+              to="/stories"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
               Stories
             </Link>
             <Link
-              to="/matrilab/contact"
+              to="/contact"
               className="nav-item"
               onClick={() => setMenuOpen(false)}
             >
@@ -87,11 +112,17 @@ const Navbar = () => {
                 <option>English</option>
                 <option>Hindi</option>
               </select>
-              <Link to="/matrilab/login">
-                <button className="login-btn">
-                  <i className="bi bi-person"></i> Login
+              {isLoggedIn ? (
+                <button className="login-btn" onClick={handleLogout}>
+                  <i className="bi bi-box-arrow-right"></i> Logout
                 </button>
-              </Link>
+              ) : (
+                <Link to="/login">
+                  <button className="login-btn">
+                    <i className="bi bi-person"></i> Login
+                  </button>
+                </Link>
+              )}
             </div>
           </nav>
         </div>
